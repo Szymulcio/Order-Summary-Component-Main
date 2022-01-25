@@ -1,0 +1,154 @@
+:root {
+  --main-blue-pale: hsl(225, 100%, 94%);
+  --main-blue-bright: hsl(245, 75%, 52%);
+
+  --neutral-blue-pale: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-color: var(--main-blue-pale);
+
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  margin: 100px auto;
+  width: 375px;
+}
+
+.content {
+  background-color: white;
+  border-radius: 16px;
+  height: 700px;
+}
+
+.previev--image img {
+  width: 375px;
+  display: block;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.summary {
+  margin: 1rem;
+}
+
+.summary--heading {
+  margin: 2rem auto 1rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.summary--info {
+  margin: 1rem auto 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 80%;
+  color: var(--neutral-desaturated-blue);
+}
+
+.plan {
+  background-color: var(--neutral-blue-pale);
+  border-radius: 1rem;
+  padding: 1rem 0.25rem;
+  margin: 2rem auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan--icon {
+  margin: 0 0.5rem 0 1rem;
+}
+
+.plan--overview h3 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.plan--overview p {
+  font-weight: 500;
+  color: var(--neutral-desaturated-blue);
+}
+
+.plan--btn {
+  margin: 0 1rem 0 3rem;
+}
+
+.plan--btn button {
+  background-color: var(--neutral-blue-pale);
+  color: var(--main-blue-bright);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.plan--btn button:active,
+.plan--btn button:hover {
+  color: var(--neutral-dark-blue);
+  text-decoration: none;
+}
+
+.btn {
+  margin: 1.5rem auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+  font: inherit;
+  width: 85%;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn--cta {
+  color: white;
+  background-color: var(--main-blue-bright);
+  box-shadow: 0px 5px 16px 2px var(--neutral-desaturated-blue);
+}
+
+.btn--cta:active,
+.btn--cta:hover {
+  background-color: var(--neutral-dark-blue);
+}
+
+.btn--cancel {
+  background-color: white;
+  color: var(--neutral-desaturated-blue);
+}
+.btn--cancel:hover,
+.btn--cancel:active {
+  color: black;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 450px;
+  }
+
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .previev--image img {
+    width: 450px;
+  }
+}
