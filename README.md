@@ -46,3 +46,6 @@ Szymon Wojnarowski
 
 - Frontend Mentor - [@Szymulcio](https://www.frontendmentor.io/profile/Szymulcio)
 
+![image](https://user-images.githubusercontent.com/82280382/155981007-cb02824e-042b-4a00-8f0d-ce9c1948eb5f.png)
+
+
